@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  root 'homes#index'
+  root 'visits#index'
+  resources :visits
 end

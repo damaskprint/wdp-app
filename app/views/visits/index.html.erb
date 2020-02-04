@@ -7,17 +7,24 @@
 <body>
     <br />
   <br />
-  <%= simple_form_for :visit do |f| %>
+  <%= simple_form_for @visitor do |f| %>
     <%= f.input :name %>
     <%= f.submit 'Create', class: 'btn btn-danger' %>
   <% end %>
 
   <br />
   <br />
-  visitors:
+  <h2>visitors: </h2>
   <br />
-  <h2>- <%= @visitor.name %></h2>
+  
+ 
+  <% @visitorname.each do |visit| %>
+    <div>
+      <%= visit.name %></h1>
+    </div>
 
+    <hr />
+  <% end %>
 
 
   <br/ >
